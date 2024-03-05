@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f6f6f6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+    position: sticky; /*TAMBIEN ESTA EL FIXED PERO NO CONSUME ESPACIO*/
+    top: 0;
+    background-color: #000000;
+    animation: headeri linear both;
+    animation-timeline: scroll(root block);
+    z-index: 100;
+}
+
+.title_header {
+    left: 60px;
+    color: #fff;
+    position: relative;
+    text-shadow: 2px 2px 3px #6e6e6e,
+                 -2px 2px 3px #6e6e6e,
+                 2px -2px 3px #6e6e6e,
+                 -2px -2px 3px #6e6e6e;
+    transition: all ease-in-out;
+    transition-delay: .3s;
+    transition-duration: .5s;
+    animation: tam linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0px 200px;
+}
+
+.title_header:hover{
+    color: #3d3d3d;
+    text-shadow: 2px 2px 3px rgb(99, 99, 99),
+                 -2px 2px 3px rgb(124, 124, 124),
+                 2px -2px 3px rgb(99, 99, 99),
+                 -2px -2px 3px rgb(99, 99, 99);
+}
+
+ul {
+    display: flex;
+    margin-right: 55px;
+    gap: 15px;
+    animation: esp linear both;
+    animation-timeline: scroll(root block);
+
+}
+
+.link {
+    display: block;
+    padding: 5px 0px;
+    border-radius: 20px;
+    transition: all ease-in-out;
+    transition-duration: .3s;
+
+}
+
+.link:hover {
+    background-color: #f6f6f6;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 12px;
+    transition: all ease-in-out;
+    transition-duration: .3s;
+}
+
+.link a:hover {
+    color: #000000;
+}
+
+.cont_intro {
+    display: grid;
+    grid-template-rows: 200px 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(61, 61, 61, 0.575);
+    height: 100vh;
+    opacity: 1;
+    padding: 10px;
+    animation: intro linear both;
+    animation-timeline: scroll(root block);
+}
+
+.datos_intro li {
+    display: block;
+}
+
+.datos_intro {
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    width: 700px;
+    line-height: 22px;
+}
+
+.title_intro {
+    font-size: 50px;
+    font-weight: 800;
+    padding-top: 40px;
+    text-shadow: 2px 2px 2px rgb(77, 77, 77),
+                 -2px 2px 2px rgb(77, 77, 77),
+                 2px -2px 2px rgb(77, 77, 77),
+                 -2px -2px 2px rgb(77, 77, 77);
+}
+
+.cont_content {
+    display: block;
+}
+
+.negro {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 70px 50px;
+}
+
+.cont_ln {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.recursos_n {
+    display: grid;
+    justify-content: end;
+    text-align: end;
+}
+
+.title_recursos_n {
+    color: #f6f6f6;
+    text-align: end;
+}
+
+.cont_list_n {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.list_n {
+    display: block;
+    color: #f6f6f6;
+    
+}
+
+.complemento {
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+
+.blanco {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 500px;
+    padding: 60px 0px;
+}
+
+.list_b {
+    display: block;
+}
+
+.cont_lb {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.complemento_2 {
+    display: grid;
+    justify-content: center;
+    color: #000000;
+    list-style-type: none;
+}
+
+footer {
+    background-color: #3d3d3d;
+}
+
+.title_footer {
+    color: #f6f6f6;
+    padding-top: 20px;
+    margin: 0px 0px 10px 20px;
+}
+
+.list_bibli {
+    padding: 20px;
+}
+
+.text_footer {
+    color: #f6f6f6;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+.t1 {
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+}
+
+.t2 {
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    transition: all ease-in-out;
+    transition-duration: 1s;
+}
+
+.t1 .text_trap {
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.t2 .excusa {
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.trampa {
+    
+}
+
+.t2:hover {
+    animation: chiste linear both;
+    animation-delay: 1s;
+    
+}
+
+@keyframes chiste {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;;
+    }
+}
+
+@keyframes intro {
+    from {
+        transform: scale(1);
+        box-shadow: 10px 10px 4px #bdbdbd;
+    }
+    to {
+        transform: scale(.7);
+        box-shadow: 25px 32px 14px #000000;
+        border-radius: 25px;
+        opacity: 0.2;
+    }
+}
+
+@keyframes headeri {
+    to {
+        background: rgba(79, 79, 79, 0.486);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@keyframes tam {
+    to {
+        font-size: 28px;
+        margin-left: 55px;
+    }
+}
+
+@keyframes esp {
+    to {
+        margin-right: 70px;
+    }
+}
