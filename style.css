@@ -1,16 +1,16 @@
 @font-face {
     font-family: "cartel";
-    src:url(fuentes/PlaywriteBEVLG-VariableFont_wght.woff2);
+    src:url(PlaywriteBEVLG-VariableFont_wght.woff2);
 }
 
 @font-face {
     font-family: "anton";
-    src: url(fuentes/EduAUVICWANTHand-Bold.woff2);
+    src: url(EduAUVICWANTHand-Bold.woff2);
 }
 
 @font-face {
     font-family: timana;
-    src: url(fuentes/Timmana-Regular.woff2);
+    src: url(Timmana-Regular.woff2);
 }
 
 :root {
